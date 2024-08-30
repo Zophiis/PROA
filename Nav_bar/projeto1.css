@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    height: 100vh; /*coloração só é definida depois de adicionar altura??*/
+    width: 100%;
+    background: #bb9eff;
+    display: flex; /* ???*/
+    align-items: center; 
+    justify-content: center;
+}
+
+nav{
+    background: #ffffff ;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6 )
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 2rem;
+    padding: 0 10px;
+    margin:0 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+nav ul li::after{ /*::??? */
+    content: '';
+    width:0;
+    height: 3px;
+    background: #bb9eff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.6s;
+}
+
+nav ul li:hover::after{
+    width:100%;
+}
